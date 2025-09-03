@@ -1,8 +1,9 @@
 :root {
-    --background-color: #edf6f8;
-    --light-color: #ffe6e6;
-    --dark-color: #330000;  
-    --link-color: rgb(198, 142, 31);
+    --background-color: #D6E5E3;
+    --light-color: #CACFD6;
+    --med-color:#3d2c88;
+    --dark-color: #424874;  
+    --link-color: #A6B1E1;
 }
     h1 {
     color:cornflowerblue;
@@ -13,7 +14,7 @@
 p {
     font-family: "TASA Explorer", sans-serif;
     font-size: 20px;
-    color:darksalmon;
+    color: var(--med-color);
 }
 
 main {
@@ -27,9 +28,10 @@ main {
     justify-content: space-between;
 }
 
-#head h3 a {
+#head h3, a {
     color: var(--dark-color);
     text-decoration: none;
+    font-family: "DM Serif Display", sans-serif;
 }
 
 /* our post class */
@@ -37,18 +39,26 @@ main {
     border: 1px solid var(--dark-color);
     margin-bottom: 1em;
     padding: .5em 1em;
-}
-
-.post a {
-    color: var(--link-color);
-    background-color: var(--light-color);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 10%;
-}
-
-.post h2 {
-    color: var(--dark-color);
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    a {
+        color: var(--med-color);
+        background-color: var(--light-color);
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 10%;
+        font-family: "TASA Explorer", sans-serif;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    h2 {
+        color: var(--dark-color);
+        font-family: "DM Serif Display", serif;
+    }
 }
 
 footer {
