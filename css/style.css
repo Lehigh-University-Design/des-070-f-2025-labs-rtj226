@@ -1,0 +1,57 @@
+:root {
+    --background-color: #edf6f8;
+    --light-color: #ffe6e6;
+    --dark-color: #330000;  
+    --link-color: rgb(198, 142, 31);
+}
+    h1 {
+    color:cornflowerblue;
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5em;
+}
+
+p {
+    font-family: "TASA Explorer", sans-serif;
+    font-size: 20px;
+    color:darksalmon;
+}
+
+main {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#head h3 a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+/* our post class */
+.post {
+    border: 1px solid var(--dark-color);
+    margin-bottom: 1em;
+    padding: .5em 1em;
+}
+
+.post a {
+    color: var(--link-color);
+    background-color: var(--light-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.post h2 {
+    color: var(--dark-color);
+}
+
+footer {
+    text-align:center;
+    justify-content: center;
+}
